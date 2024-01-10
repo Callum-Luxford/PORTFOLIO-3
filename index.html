@@ -22,7 +22,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="ri-home-2-line"></i> Home
                         </a>
                     </li>
@@ -341,18 +341,80 @@
 
         <!-- Contact -->
         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <span class="section__subtitle">Get in touch</span>
 
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-message-2-line"> Talk to me</i>
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">luxford.cal@gmail.com</span>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Phone</span>
+                            <span class="contact__data-info">+447756632882</span><br>
+                            
+                            <a href="mailto:luxford.cal@gmail.com" class="contact__button">
+                                Write to me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- End of Main -->
 
     <!-- Footer -->
     <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Callum</h1>
+            <p>Developer</p>
 
+            <ul class="footer__list">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://www.linkedin.com/in/callum-luxford-5185872a2/" class="footer__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+
+                <a href="https://github.com/Callum-Luxford" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+
+                <a href="https://twitter.com/Callum_Luxford" class="footer__social-link">
+                    <i class="ri-twitter-line"></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; Copyright | Callum Luxford. All rights reserved
+            </span>
+        </div>
     </footer>
 
     <!-- Scroll up -->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
     <!-- scroll reveal -->
     <script src=""></script>
 
@@ -360,6 +422,7 @@
     <script src="swiper-bundle.min.js"></script>
 
     <!-- Email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- Main js -->
     <script src="index.js"></script>

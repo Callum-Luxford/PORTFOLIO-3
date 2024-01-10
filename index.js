@@ -46,10 +46,51 @@ let swiperProjects = new Swiper(".projects__container", {
     pagination: {
       el: ".swiper-pagination",
     },
-    mousewheel: true,
-    keyboard: true,
+    breakpoints: {
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: -56,
+        },
+      },
+    // mousewheel: true,
+    // keyboard: true,
   });
 
+
+  //   Email
+
+  /* Scroll section active link */
+
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () => {
+    const scrollY = window.pageXOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offSetHeight,
+        sectionTop = current.offSetTop - 58,
+        sectionId = current.getAttribute('id'),
+        sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            sectionsClass.classList.add('active-link')
+        } else {
+            sectionsClass.classList.remove('active-link')
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollActive)
+
+// scroll up
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
+
+window.addEventListener('scroll', scrollUp)
 
 
 

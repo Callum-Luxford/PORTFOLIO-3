@@ -168,13 +168,13 @@ body.dark-theme {
     border-radius: 3rem;
 }
 
-.nav__logo, 
+.nav__logo,
 .nav__toggle,
 .nav__close {
     color: var(--title-color);
 }
 
-.nav__logo{
+.nav__logo {
     font-family: var(--body-font);
     font-weight: var(--font-medium);
 }
@@ -186,9 +186,9 @@ body.dark-theme {
 }
 
 @media screen and (max-width: 1023px) {
-    .nav__menu{
+    .nav__menu {
         position: fixed;
-        width: 88%;
+        width: 90%;
         left: 0;
         right: 0;
         bottom: -60%;
@@ -238,6 +238,11 @@ body.dark-theme {
 
 .show-menu {
     bottom: 2rem;
+}
+
+/* Active link */
+.active-link {
+    color: var(--title-color);
 }
 
 /* home */
@@ -292,7 +297,7 @@ body.dark-theme {
     color: var(--title-color);
 }
 
-.home__info{
+.home__info {
     display: grid;
     row-gap: 2rem;
 }
@@ -378,23 +383,27 @@ body.dark-theme {
 /* Animation Skills */
 
 .skills__blob:hover img {
-    animation: bounce-skills  .6s;
+    animation: bounce-skills .6s;
 }
 
 @keyframes bounce-skills {
-    0%{
+    0% {
         transform: translate(0);
     }
-    20%{
+
+    20% {
         transform: translateY(-6px);
     }
-    40%{
+
+    40% {
         transform: translate(0);
     }
-    60%{
+
+    60% {
         transform: translateY(-3px);
     }
-    80%{
+
+    80% {
         transform: translate(0);
     }
 }
@@ -524,3 +533,180 @@ body.dark-theme {
     right: -1rem;
     top: 4.5rem;
 }
+
+.projects__container .swiper-slide {
+    margin-bottom: 4.5rem;
+}
+
+.projects__container .swiper-pagination-bullets {
+    bottom: 0;
+}
+
+.projects__container .swiper-pagination-bullet {
+    background-color: var(--text-color-light);
+    opacity: initial;
+}
+.projects__container .swiper-pagination-bullet-active {
+    background-color: var(--title-color);
+}
+
+/* Contact */
+.contact__container {
+    row-gap: 3.5rem;
+}
+
+.contact__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 2.5rem;
+}
+
+.contact__title i { 
+    font-size: 1rem;
+    font-weight: initial;
+}
+
+.contact__info,
+.contact__data {
+    display: grid;
+}
+
+.contact__info {
+    row-gap: 2rem;
+}
+
+.contact__data {
+   row-gap: .75rem; 
+}
+
+.contact__data-title {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contact__data-info {
+    font-size: var(--small-font-size);
+    font-family: var(--body-font);
+    color: var(--title-color);
+}
+
+.contact__button {
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.contact__button i {
+    font-size: 1rem;
+    transition: transform .3s;
+}
+
+.contact__button:hover i {
+    transform: translateX(.25rem);
+}
+
+/* Footer */
+
+.footer__container {
+    padding: 3rem 0 7rem;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 1rem;
+}
+
+.footer__list,
+.footer__social {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer__list {
+    margin: 2.5rem 0;
+    column-gap: 2.5rem;
+}
+
+.footer__link {
+    color: var(--title-color);
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    column-gap: 1.25rem;
+}
+
+.footer__social-link {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    transition: transform .3s;
+}
+
+.footer__social-link:hover {
+    transform: translateY(-.15rem);
+}
+
+.footer__copy {
+    display: block;
+    margin-top: 4.5rem;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(207, 4%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(207, 4%, 65%);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(207, 4%, 55%);
+}
+
+/* Scroll up */
+
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 12px hsla(207, 24%, 35%, .1);
+    display: inline-flex;
+    padding: .35rem;
+    border-radius: .25rem;
+    font-size: 1.1rem;
+    color: var(--title-color);
+    z-index: var(--z-tooltip);
+    transition: bottom .3s, transform .3s;
+}
+
+.scrollup:hover {
+    transform: translateY(-.25rem);
+}
+
+/* show scroll up */
+
+.show-scroll {
+    bottom: 7.5rem;
+}
+
