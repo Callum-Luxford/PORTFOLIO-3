@@ -528,6 +528,7 @@ body.dark-theme {
 
 .projects__img {
     width: 250px;
+    /* height: 170px; */
     border-radius: .75rem;
     margin-bottom: 1.25rem;
 }
