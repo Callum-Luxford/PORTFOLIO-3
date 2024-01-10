@@ -103,6 +103,21 @@ body.dark-theme {
     --container-color: hsl(207, 4%, 12%);
 }
 
+/* theme */
+
+.nav__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .3s;
+}
+
 /* Useable CSS Classes */
 
 .container {
@@ -436,6 +451,8 @@ body.dark-theme {
 .qualification__info {
     display: grid;
     row-gap: 2rem;
+    /* justify-content: center;
+    text-align: center; */
 }
 
 .qualification__name {
@@ -454,6 +471,12 @@ body.dark-theme {
     margin-bottom: .75rem;
 
 }
+
+/* .qualification__country,
+.qualification__year,
+.qualification__name {
+    
+} */
 
 /* .qualification__img {
     width: 150px;
