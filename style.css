@@ -778,6 +778,33 @@ body.dark-theme {
     bottom: 7.5rem;
 }
 
+/* Particle.js */
+
+.bubbles {
+    position: absolute;
+    height: 100dvh;
+    left: 0;
+}
+
+.particles-js-canvas-el {
+    width: auto;
+ 
+    height: 100dvh;
+  
+    position: fixed;
+  
+    background-image: url('');
+  
+    background-size: cover;
+  
+    background-repeat: no-repeat;
+  
+    z-index: -100;
+}
+/* Particle.js */
+
+
+
 /* Breakpoint */
 
 /* Small Devices */
