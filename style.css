@@ -951,6 +951,8 @@ body.dark-theme {
         background-color: var(--body-color);
         transition: .6s;
         transition: background .6s;
+        opacity: .8;
+        backdrop-filter: blur(10px);
     }
 
     .nav {
