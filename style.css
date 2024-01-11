@@ -202,8 +202,8 @@ body.dark-theme {
     bottom: 2rem;
     left: 0;
     z-index: var(--z-fixed);
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .nav {
@@ -901,6 +901,16 @@ body.dark-theme {
     .contact__container {
         justify-content: center;
         text-align: center;
+    }
+
+    .header {
+        width: 100%;
+        position: fixed;
+        bottom: 2rem;
+        left: 0;
+        z-index: var(--z-fixed);
+        display: flex;
+        justify-content: center;
     }
 }
 
