@@ -322,14 +322,16 @@ body.dark-theme {
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: var(--body-color);
-    border: 2px solid var(--text-color-light);
+    /* background-color: var(--body-color);
+    border: 2px solid var(--text-color-light); */
     justify-self: center;
     border-radius: 50%;
     place-items: center;
     overflow: hidden;
-    box-shadow: 0px 0px 15px var(--text-color-light);
+    /* box-shadow: 0px 0px 60px rgb(255, 156, 76); */
+    box-shadow: 0px 0px 60px #ff8a46;
     transition: background .6s;
+    z-index: 1;
 }
 
 .home__prefil img {
