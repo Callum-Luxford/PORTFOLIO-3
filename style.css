@@ -784,6 +784,7 @@ body.dark-theme {
     position: absolute;
     height: 100dvh;
     left: 0;
+    z-index: -1000;
 }
 
 .particles-js-canvas-el {
@@ -799,7 +800,7 @@ body.dark-theme {
   
     background-repeat: no-repeat;
   
-    z-index: -100;
+    z-index: -1000;
 }
 /* Particle.js */
 
