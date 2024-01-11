@@ -64,6 +64,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* display: flex;
+    justify-content: center; */
 }
 
 body {
@@ -137,9 +139,11 @@ body.dark-theme {
 .dark-theme::-webkit-scrollbar {
     background-color: hsla(207, 4%, 15%);
 }
+
 .dark-theme::-webkit-scrollbar-thumb {
     background-color: hsla(207, 4%, 25%);
 }
+
 .dark-theme::-webkit-scrollbar-thumb:hover {
     background-color: hsla(207, 4%, 35%);
 }
@@ -147,7 +151,9 @@ body.dark-theme {
 /* Useable CSS Classes */
 
 .container {
-    max-width: 1024px;
+    /* max-width: 1024px; */
+    /* max-width: 1250px; */
+    max-width: 1400px;
     margin-inline: 1.5rem;
 }
 
@@ -196,6 +202,8 @@ body.dark-theme {
     bottom: 2rem;
     left: 0;
     z-index: var(--z-fixed);
+    display: flex;
+    justify-content: center;
 }
 
 .nav {
@@ -462,6 +470,11 @@ body.dark-theme {
     row-gap: 3.5rem;
 }
 
+.qualification__container {
+    justify-content: center;
+    text-align: center;
+}
+
 .qualification__title {
     display: flex;
     justify-content: center;
@@ -599,6 +612,7 @@ body.dark-theme {
     background-color: var(--text-color-light);
     opacity: initial;
 }
+
 .projects__container .swiper-pagination-bullet-active {
     background-color: var(--title-color);
 }
@@ -618,7 +632,7 @@ body.dark-theme {
     margin-bottom: 2.5rem;
 }
 
-.contact__title i { 
+.contact__title i {
     font-size: 1rem;
     font-weight: initial;
 }
@@ -633,7 +647,7 @@ body.dark-theme {
 }
 
 .contact__data {
-   row-gap: .75rem; 
+    row-gap: .75rem;
 }
 
 .contact__data-title {
@@ -732,6 +746,7 @@ body.dark-theme {
     background-color: hsl(207, 4%, 65%);
     border-radius: .5rem;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: hsl(207, 4%, 55%);
 }
@@ -788,12 +803,18 @@ body.dark-theme {
         width: 200px;
         justify-self: center;
     }
+
+    .home__info {
+        justify-content: center;
+    }
 }
 
 /* Medium Devices */
 
 @media screen and (min-width: 576px) {
-    .nav, .nav__menu {
+
+    .nav,
+    .nav__menu {
         width: 380px;
     }
 
@@ -813,16 +834,40 @@ body.dark-theme {
         overflow: hidden;
     }
 
-    .projects__container, .swiper-button-prev {
+    .projects__container,
+    .swiper-button-prev {
         left: 1rem;
     }
 
-    .projects__container, .swiper-button-next {
+    .projects__container,
+    .swiper-button-next {
         right: 1rem;
+    }
+
+    .projects__container .swiper-button-prev,
+    .projects__container .swiper-button-next {
+        font-size: 3rem;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media screen and (min-width: 767px) {
+    
+    /* If I want the home info to go under the blob */
+    .home__container {
+        grid-template-columns: 1fr;
+    }
+
+    .home__data {
+        order: 0;
+    }
+
+
     .home__container {
         grid-template-columns: 1fr 2fr 1fr;
     }
@@ -842,5 +887,256 @@ body.dark-theme {
 
     .home__info-description {
         padding-right: 0;
+    }
+
+    .qualification__container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .projects__container {
+        width: 500px;
+    }
+
+    .contact__container {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Large Devices */
+
+@media screen and (min-width: 1023px) {
+    .header {
+        top: 0;
+        bottom: initial;
+        background-color: var(--body-color);
+        transition: .6s;
+        transition: background .6s;
+    }
+
+    .nav {
+        width: initial;
+        height: calc(--header-height) + 1.5rem;
+        box-shadow: none;
+        border-radius: 0;
+        column-gap: 3rem;
+        margin-inline: 1.5rem;
+        padding: 0;
+    }
+
+    .nav__link i,
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    .nav__menu {
+        width: initial;
+        margin-left: auto;
+        background-color: var(--body-color);
+        transition: background .6s;
+    }
+
+    .nav__list {
+        display: flex;
+        column-gap: 3rem;
+    }
+
+    .nav__link {
+        font-size: var(--normal-font-size);
+    }
+
+    .dark-theme .nav,
+    .dark-theme .nav__menu {
+        background-color: var(--body-color);
+        box-shadow: none;
+    }
+
+    .change-theme {
+        color: var(--text-color-light);
+    }
+
+    .change-theme:hover {
+        color: var(--title-color);
+    }
+
+    .section {
+        padding-block: 8rem 0;
+    }
+
+    .home__title {
+        font-size: 2.25rem;
+    }
+
+    .scrollup {
+        right: 3rem;
+    }
+
+    .show-scroll {
+        bottom: 5rem;
+    }
+
+    /* chnage background header  */
+
+    .bg-header {
+        box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+    }
+
+    .dark-theme .bg-header {
+        box-shadow: 0 6px 24px hsla(207, 24%, 8%, .6);
+    }
+}
+
+@media scren and (min-width: 1048px) {
+    .container {
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section__border {
+        padding-bottom: 6rem;
+    }
+
+    .section__subtitle {
+        margin-bottom: 5rem;
+    }
+
+    .home__title {
+        font-size: var(--biggest-font-size);
+    }
+
+    .home__blob {
+        width: 400px;
+        height: 400px;
+    }
+
+    .home__data {
+        row-gap: 2.5rem;
+    }
+
+    .home__social {
+        column-gap: 2rem;
+    }
+
+    .home__social-link {
+        font-size: 1.5rem;
+    }
+
+    .home__info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3rem;
+        /* reduce margin-top if changing position of blob to above info */
+        margin-top: 20rem;
+        font-size: var(--h3-font-size);
+    }
+
+    /* .skills__container {
+        column-gap: 10rem;
+    } */
+
+    .skills__title {
+        margin-bottom: 3rem;
+    }
+
+    .skills__title i {
+        font-size: 1.25rem;
+    }
+
+    .skills__name {
+        font-size: var(--normal-font-size);
+    }
+
+    .skills__info {
+        gap: 3rem;
+    }
+
+    .qualification__container {
+        column-gap: 14rem;
+    }
+
+    .qualification__title {
+        margin-bottom: 3rem;
+    }
+
+    .qualification__title {
+        font-size: 1.25rem;
+    }
+
+    .qualification__name {
+        font-size: var(--h3-font-size);
+    }
+
+    .qualification__img {
+        width: 300px;
+        left: -6rem;
+        margin-bottom: 5rem;
+    }
+
+    .projects__container {
+        width: 900px;
+    }
+
+    .projects__container .swiper-button-prev,
+    .projects__container .swiper-button-next {
+        font-size: 3rem;
+    }
+
+    .projects__container .swiper-button-prev {
+        left: -1rem;
+    }
+
+    .projects__container .swiper-button-next {
+        right: -1rem;
+    }
+
+    .projects__container .swiper-slide {
+        margin-bottom: 6.5rem;
+    }
+
+    .projects__img {
+        width: 320px;
+        margin-bottom: 2rem;
+    }
+
+    .contact__title {
+        margin-bottom: 3rem;
+    }
+
+    .contact__title i {
+        font-size: 1.25rem;
+    }
+
+    .contact__info {
+        row-gap: 3rem;
+    }
+
+    .contact__data-info {
+        font-size: var(--normal-font-size);
+    }
+
+    .footer__container {
+        padding: 4rem 0 3rem;
+    }
+
+    .footer__list  {
+        column-gap: 3rem;
+        margin: 3rem 0;
+    }
+
+    .footer__social {
+        column-gap: 2rem;
+    }
+
+    .footer__social-link {
+        font-size: 1.5rem;
+    }
+
+    .footer__copy {
+        margin-top: 5rem;
     }
 }
