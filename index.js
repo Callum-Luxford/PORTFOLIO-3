@@ -116,6 +116,8 @@ if (selectedTheme) {
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
   // Add or remove the dark / icon theme
+
+  // I changed my mind about the theme option, so i have 'setItem' here for theme to be set to dark, rather than going through the CSS and changing the theme manually when I have declared all of the variables already starting with the light theme.
   document.body.classList.setItem(darkTheme)
   themeButton.classList.toggle(iconTheme)
   // save the theme and the current icon that the user chose

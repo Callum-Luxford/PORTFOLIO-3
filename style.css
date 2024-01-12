@@ -607,12 +607,12 @@ body.dark-theme {
 
 .projects__container .swiper-button-prev {
     left: -1rem;
-    top: 4.5rem;
+    top: 5.5rem;
 }
 
 .projects__container .swiper-button-next {
     right: -1rem;
-    top: 4.5rem;
+    top: 5.5rem;
 }
 
 .projects__container .swiper-slide {
@@ -1162,6 +1162,14 @@ body.dark-theme {
 
     .projects__container .swiper-slide {
         margin-bottom: 6.5rem;
+    }
+
+    .projects__container .swiper-button-prev {
+        top: 8rem;
+    }
+    
+    .projects__container .swiper-button-next {
+        top: 8rem;
     }
 
     .projects__img {
