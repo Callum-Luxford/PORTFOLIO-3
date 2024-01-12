@@ -172,7 +172,8 @@ body.dark-theme {
 }
 
 .section__border {
-    border-bottom: 1px solid var(--title-color);
+    /* border-bottom: 1px solid var(--title-color); */
+    border-bottom: 1px solid hsla(207, 4%, 32%);
     padding-bottom: 3.5rem;
 }
 
