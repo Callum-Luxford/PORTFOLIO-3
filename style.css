@@ -817,7 +817,7 @@ z-index: 1;
     justify-self: center;
     place-items: center;
     overflow: hidden;
-    z-index: -10000000;
+    z-index: -10000;
 }
 
 .layer {
