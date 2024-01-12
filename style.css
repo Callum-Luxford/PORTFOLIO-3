@@ -7,12 +7,19 @@
     --header-height: 3.5rem;
 
     /* Colors */
-    --first-color: hsl(207, 65%, 65%);
+    /* --first-color: hsl(207, 65%, 65%);
     --title-color: hsl(207, 4%, 16%);
     --text-color: hsl(207, 4%, 28%);
     --text-color-light: hsl(207, 4%, 56%);
     --body-color: hsl(207, 4%, 99%);
-    --container-color: hsl(207, 4%, 95%);
+    --container-color: hsl(207, 4%, 95%); */
+
+    --first-color: hsl(207, 65%, 65%);
+    --title-color: hsl(207, 4%, 95%);
+    --text-color: hsl(207, 4%, 65%);
+    --text-color-light: hsl(207, 4%, 56%);
+    --body-color: hsl(207, 4%, 10%);
+    --container-color: hsl(207, 4%, 12%);
 
     --gradient-color: linear-gradient(180deg,
             hsla(207, 48%, 72%, 0),
