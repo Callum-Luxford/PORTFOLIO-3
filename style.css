@@ -132,6 +132,11 @@ body.dark-theme {
     color: var(--title-color);
 }
 
+.dark-theme .home__social-link,
+.dark-theme .footer__social-link {
+    color: var(--text-color);
+}
+
 .dark-theme .section__border {
     border-bottom: 1px solid hsla(207, 4%, 32%);
 }
@@ -350,10 +355,12 @@ body.dark-theme {
     font-size: 1.25rem;
     color: var(--text-color-light);
     transition: color .3s;
+    transition: .3s;
 }
 
 .home__social-link:hover {
     color: var(--title-color);
+    transform: translateY(-.15rem);
 }
 
 .home__social-link i {
@@ -734,11 +741,13 @@ body.dark-theme {
 
 .footer__social-link {
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: var(--text-color-light);
+    transition: color .3s;
     transition: transform .3s;
 }
 
 .footer__social-link:hover {
+    color: var(--title-color);
     transform: translateY(-.15rem);
 }
 
