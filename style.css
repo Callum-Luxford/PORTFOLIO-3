@@ -442,6 +442,9 @@ z-index: 1;
     place-items: center;
     margin-bottom: 1rem;
     transition: background .6s;
+
+    /* Skills, background change */
+    background-color: hsla(0, 0%, 4%);
 }
 
 .skills__blob img {
