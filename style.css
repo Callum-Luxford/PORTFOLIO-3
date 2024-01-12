@@ -341,6 +341,7 @@ body.dark-theme {
 
 .home__social {
     justify-self: center;
+    align-items: end;
     display: flex;
     column-gap: 1.25rem;
 }
@@ -355,9 +356,14 @@ body.dark-theme {
     color: var(--title-color);
 }
 
+.home__social-link i {
+    display: flex;
+}
+
 .home__info {
     display: grid;
     row-gap: 2rem;
+    /* padding-left: 7rem; */
 }
 
 .home__info-title {
