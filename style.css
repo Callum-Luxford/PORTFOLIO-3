@@ -804,19 +804,20 @@ body.dark-theme {
 
 .particles-js-canvas-el {
     width: auto;
- 
+
     height: 100dvh;
-  
+
     position: fixed;
-  
+
     background-image: url('');
-  
+
     background-size: cover;
-  
+
     background-repeat: no-repeat;
-  
+
     z-index: -1000;
 }
+
 /* Particle.js */
 
 
@@ -901,7 +902,7 @@ body.dark-theme {
 }
 
 @media screen and (min-width: 767px) {
-    
+
     /* If I want the home info to go under the blob */
     .home__container {
         grid-template-columns: 1fr;
@@ -910,7 +911,7 @@ body.dark-theme {
     /* .home__data {
         order: 0;
     } */
-    
+
     .home__blob {
         width: 200px;
         height: 200px;
@@ -1189,7 +1190,7 @@ body.dark-theme {
         padding: 4rem 0 3rem;
     }
 
-    .footer__list  {
+    .footer__list {
         column-gap: 3rem;
         margin: 3rem 0;
     }
