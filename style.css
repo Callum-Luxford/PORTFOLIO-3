@@ -101,7 +101,8 @@ img {
 body.dark-theme {
     --title-color: hsl(207, 4%, 95%);
     --text-color: hsl(207, 4%, 65%);
-    --body-color: hsl(207, 4%, 10%);
+    /* --body-color: hsl(207, 4%, 10%); */
+    --body-color: hsl(0, 0%, 4%);
     --container-color: hsl(207, 4%, 12%);
 }
 
