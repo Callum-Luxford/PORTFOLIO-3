@@ -443,7 +443,7 @@ z-index: 1;
     margin-bottom: 1rem;
     transition: background .6s;
 
-    /* Skills, background change */
+    /* Skills, background changeA */
     background-color: hsla(0, 0%, 4%);
 }
 
@@ -906,8 +906,8 @@ z-index: 1;
         radial-gradient(ellipse at 52% 48%, rgba(69, 168, 255, 0) 23.96%, var(--body-color) 34.03%) 0% 0%/100% 100% no-repeat,
         radial-gradient(ellipse at 50% 50%, rgba(255, 185, 147, 0.29) 28%, rgba(69, 168, 255, 0) 30%) 0% 0%/100% 100% no-repeat;
 
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 /* Solar Eclipse */
