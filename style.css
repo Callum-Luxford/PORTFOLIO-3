@@ -185,7 +185,8 @@ body.dark-theme {
 }
 
 .section__border {
-    border-bottom: 1px solid var(--title-color);
+    /* border-bottom: 1px solid var(--title-color); */
+    border-bottom: 1px solid hsla(207, 4%, 32%);
     padding-bottom: 3.5rem;
 }
 
@@ -580,7 +581,7 @@ z-index: 1;
     height: 170px;
     border-radius: .75rem;
     margin-bottom: 1.25rem;
-    box-shadow: 0px 10px 20px rgb(129, 129, 129);
+    box-shadow: 0px 10px 20px black;
     margin-top: 2rem;
 }
 
@@ -776,7 +777,9 @@ z-index: 1;
 
 /* Scroll bar */
 
-::-webkit-scrollbar {
+/* original theme scroll bar */
+
+/* ::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
     background-color: hsl(207, 4%, 75%);
@@ -789,6 +792,23 @@ z-index: 1;
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: hsl(207, 4%, 55%);
+} */
+
+/* original theme scroll bar */
+
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsla(207, 4%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsla(207, 4%, 25%);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsla(207, 4%, 35%);
 }
 
 /* Scroll up */
@@ -797,8 +817,10 @@ z-index: 1;
     position: fixed;
     right: 1rem;
     bottom: -30%;
-    background-color: var(--body-color);
-    box-shadow: 0 4px 12px hsla(207, 24%, 35%, .1);
+    /* original */
+    /* background-color: var(--body-color);
+    box-shadow: 0 4px 12px hsla(207, 24%, 35%, .1); */
+    /* original */
     display: inline-flex;
     padding: .35rem;
     border-radius: .25rem;
@@ -806,6 +828,8 @@ z-index: 1;
     color: var(--title-color);
     z-index: var(--z-tooltip);
     transition: bottom .3s, transform .3s;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 20px hsla(207, 24%, 8%, .4);
 }
 
 .scrollup:hover {
