@@ -218,7 +218,7 @@ body.dark-theme {
 .header {
     width: 100%;
     position: fixed;
-    bottom: 2rem;
+    top: 2rem;
     left: 0;
     z-index: var(--z-fixed);
     /* display: flex;
@@ -233,7 +233,7 @@ body.dark-theme {
     background-color: var(--body-color);
     box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
     padding-inline: 1.5rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
     transition: background .6s;
 }
 
@@ -260,12 +260,12 @@ body.dark-theme {
         width: 90%;
         left: 0;
         right: 0;
-        bottom: -60%;
+        top: -60%;
         margin: 0 auto;
         background-color: var(--body-color);
         box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
         padding: 2rem 1.5rem 5rem;
-        border-radius: 2rem;
+        border-radius: 1rem;
         transition: bottom .3s;
     }
 }
@@ -306,7 +306,7 @@ body.dark-theme {
 /* show menu */
 
 .show-menu {
-    bottom: 2rem;
+    top: 2rem;
 }
 
 /* Active link */
