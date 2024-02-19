@@ -230,8 +230,8 @@ body.dark-theme {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--body-color);
-    box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+    background-color: var(--container-color);
+    box-shadow: 0 4px 20px black;
     padding-inline: 1.5rem;
     border-radius: 1rem;
     transition: background .6s;
@@ -262,8 +262,8 @@ body.dark-theme {
         right: 0;
         top: -60%;
         margin: 0 auto;
-        background-color: var(--body-color);
-        box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+        background-color: var(--container-color);
+        box-shadow: 0 4px 20px black;
         padding: 2rem 1.5rem 5rem;
         border-radius: 1rem;
         transition: top .3s;
@@ -829,7 +829,7 @@ z-index: 1;
     z-index: var(--z-tooltip);
     transition: bottom .3s, transform .3s;
     background-color: var(--container-color);
-    box-shadow: 0 4px 20px hsla(207, 24%, 8%, .4);
+    box-shadow: 0 4px 20px black;
 }
 
 .scrollup:hover {
@@ -1106,7 +1106,7 @@ z-index: 1;
     .header {
         width: 100%;
         position: fixed;
-        bottom: 2rem;
+        top: 2rem;
         left: 0;
         z-index: var(--z-fixed);
         display: flex;
@@ -1207,6 +1207,10 @@ z-index: 1;
 
     .dark-theme .bg-header {
         box-shadow: 0 6px 24px hsla(207, 24%, 8%, .6);
+    }
+
+    .nav {
+        background-color: var(--body-color);
     }
 }
 
