@@ -405,6 +405,27 @@ z-index: 1;
     padding-right: 4rem;
 }
 
+/* CV BUTTON ------------------------------------------------------- */
+
+/* .cv-button:hover {
+    transform: translateY(-.15rem);
+} */
+
+/* .cv-button {
+    width: 125px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: var(--title-color);
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transition: color .3s;
+    transition: .3s;
+} */
+
 /* Skills */
 
 .skills__container {
@@ -467,6 +488,10 @@ z-index: 1;
 .skills__subtitle {
     font-size: var(--tiny-font-size);
     color: var(--text-color-light);
+}
+
+.skills__blob .my-sql {
+    scale: 1.7;
 }
 
 /* Animation Skills */
@@ -1049,7 +1074,6 @@ z-index: 1;
         display: flex;
         justify-content: center;
     }
-
 }
 
 @media screen and (min-width: 767px) {
