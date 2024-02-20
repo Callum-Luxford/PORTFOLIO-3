@@ -1015,6 +1015,9 @@ z-index: 1;
 /* Small Devices */
 
 @media screen and (max-width: 340px) {
+    .header {
+        top: 0rem;
+    }
 
     .container {
         margin-inline: 1rem;
@@ -1059,6 +1062,18 @@ z-index: 1;
 }
 
 /* Medium Devices */
+
+@media screen and (max-width: 576px) {
+    .nav {
+        position: fixed;
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav__menu {
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: 576px) {
     
