@@ -92,6 +92,29 @@ const scrollUp = () => {
 
 window.addEventListener('scroll', scrollUp)
 
+
+// // Scroll reveal animation
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true /* Animation will repeat with this line */
+})
+
+// Call the reveal animation:
+// Home data from top down
+sr.reveal(`.home__data, .projects__container`)
+// Home info from bottom, slower delay and added interval
+sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 100})
+sr.reveal(`.skills__content:nth-child(1), .contact__container`, {origin: 'left'})
+sr.reveal(`.qualification__content`, {origin: 'right'})
+
+
+
+
+
+
 // Dark light theme
 
 // const themeButton = document.getElementById('theme-button')
