@@ -104,7 +104,7 @@ const sr = ScrollReveal({
 
 // Call the reveal animation:
 // Home data from top down
-sr.reveal(`.home__data, .projects__container, .footer__container`)
+sr.reveal(`#solar, .home__social, .projects__container, .footer__container`)
 // Home info from bottom, slower delay and added interval
 sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 100})
 sr.reveal(`.skills__content:nth-child(1), .contact__container`, {origin: 'left'})
