@@ -93,7 +93,7 @@ const scrollUp = () => {
 window.addEventListener('scroll', scrollUp)
 
 
-// // Scroll reveal animation
+// // Scroll reveal animation control
 const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
