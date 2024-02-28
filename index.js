@@ -1,3 +1,11 @@
+// Type Writer
+var typed = new Typed(".auto-type", {
+  strings: ["Hey, I'm Callum!", "Check out my Portfolio! &#128640;"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true
+})
+
 
 // show menu
 
@@ -159,13 +167,6 @@ const scrollHeader = () => {
 
 window.addEventListener('scroll', scrollHeader)
 
-// Type Writer
-var typed = new Typed(".auto-type", {
-  strings: ["Hey, I'm Callum!", "Check out my Portfolio! &#128640;"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true
-})
 
 
 
